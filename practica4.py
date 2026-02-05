@@ -1,7 +1,16 @@
-calificacion = float(input("Ingresa la calificacion de la persona: "))
+import os
+
+os.system("cls")
+
+print("---------------Calificaciones---------------")
+
+calificacion = int(input("\nIngresa la calificacion de la persona: "))
 if calificacion>=7:
     if calificacion >=9:
-    print("Excelente")
-    else print("Aprobado")
-    else print("Reprobado")
+        print("\nExcelente")
+    else:
+        print("\nAprobado")
+else:
+    print("\nReprobado")
+
 
